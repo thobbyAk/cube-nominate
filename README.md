@@ -30,7 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### `Prcocess Rating`
 
-1. I had a challenge with fetching a user's current process (image and value of the progress bar) based on the current user nomination on edit. I created an array of all ratings available and the values attached to them. i created a helper function to search through the array for the existing rating value and return the rating object. use the rating object returned to populate the
+1. I had a challenge with fetching a user's current process (image and value of the progress bar) based on the current user nomination on edit. I created an array of all ratings available and the values attached to them. I created a helper function to search through the array for the existing rating value and return the rating object. use the rating object returned to populate the
 2. I had a challenge with the scroll position staying in the same position as the previous page when you route to a new page. I created a helper component that adjusts the scroll position to the top whenever the route/pathname changes.
 
 ### `Technologies Used technologies`
@@ -42,8 +42,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `Extra Features`
 
-Register screen - allows a cube employee to sign up
-Login screen - allows a cube employee to log in before nomination. the authentication token returned on login is used to authenticate the API call which requires authentication
+1. Register screen - allows a cube employee to sign up
+2. Login screen - allows a cube employee to log in before nomination. the authentication token returned on login is used to authenticate the API call which requires authentication
 
 Reduxjs/toolkit
 
