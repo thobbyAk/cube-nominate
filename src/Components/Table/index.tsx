@@ -34,7 +34,7 @@ const NominationTable = () => {
 		queryKey: ["nominees"],
 		queryFn: () => getAllNominees(),
 	});
-	const { error, mutate } = useMutation({
+	const { error, isPending, mutate } = useMutation({
 		mutationFn: (nominationId: string) => fetchDeleteNomination(nominationId),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ["nominations"] });
@@ -125,6 +125,7 @@ const NominationTable = () => {
 				action="Yes, delete"
 				setAction={handleDeleteNomination}
 				open={openDeleteModal}
+				isLoading={isPending}
 				onClose={() => setOpenDeleteModal(false)}
 			/>
 		</>

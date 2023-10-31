@@ -411,39 +411,39 @@ export const BlackLoadingIcon = () => {
 		>
 			<path
 				d="M18 6.5V12.75"
-				stroke="white"
+				stroke="black"
 				strokeWidth="1.5"
 				strokeMiterlimit="10"
 			/>
 			<path
 				d="M18 31.5V25.25"
-				stroke="white"
+				stroke="black"
 				strokeWidth="1.5"
 				strokeMiterlimit="10"
 			/>
-			<path d="M30 19H24" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" />
-			<path d="M6 19H12" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" />
+			<path d="M30 19H24" stroke="black" strokeWidth="1.5" strokeMiterlimit="10" />
+			<path d="M6 19H12" stroke="black" strokeWidth="1.5" strokeMiterlimit="10" />
 			<path
 				d="M26.5 10.1455L22.25 14.5726"
-				stroke="white"
+				stroke="black"
 				strokeWidth="1.5"
 				strokeMiterlimit="10"
 			/>
 			<path
 				d="M9.5 27.8538L13.75 23.4268"
-				stroke="white"
+				stroke="black"
 				strokeWidth="1.5"
 				strokeMiterlimit="10"
 			/>
 			<path
 				d="M26.5 27.8538L22.25 23.4268"
-				stroke="white"
+				stroke="black"
 				strokeWidth="1.5"
 				strokeMiterlimit="10"
 			/>
 			<path
 				d="M9.5 10.1455L13.75 14.5726"
-				stroke="white"
+				stroke="black"
 				strokeWidth="1.5"
 				strokeMiterlimit="10"
 			/>

@@ -3,7 +3,7 @@ import OverviewImage from "../Assets/images/overviewscreen.jpg";
 import { EditIcon } from "../Assets/Icons";
 import { PrimaryButton } from "../Components/Buttons";
 import { useNavigate } from "react-router-dom";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { createNomination, fetchUpdateNomination } from "../api/nomination";
 import { NominationPayload, Nominees } from "../Utils/types";
 import toast from "react-hot-toast";
@@ -15,7 +15,7 @@ const Preview = () => {
 		(state) => state.nominationState
 	);
 	const [nomineeSelected, setNomineeSeleted] = useState("");
-
+	const queryClient = useQueryClient();
 	const { error, mutate, isPending } = useMutation({
 		mutationFn: (payload: NominationPayload) => {
 			if (currentNomination.nomination_id) {
@@ -26,6 +26,7 @@ const Preview = () => {
 		},
 		onSuccess: () => {
 			toast.success("nomination created successfully");
+			queryClient.invalidateQueries({ queryKey: ["nominations"] });
 			navigate("/success");
 		},
 	});

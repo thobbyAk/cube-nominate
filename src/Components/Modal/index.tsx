@@ -6,6 +6,7 @@ interface ModalProps {
 	header?: string;
 	body?: string;
 	action?: string;
+	isLoading?: boolean;
 	onClose: () => void;
 	setAction: () => void;
 }
@@ -15,6 +16,7 @@ const Modal = ({
 	onClose,
 	setAction,
 	header,
+	isLoading,
 	body,
 	action,
 }: ModalProps) => {
@@ -35,7 +37,7 @@ const Modal = ({
 				</div>
 				<div className="shadow-3xl">
 					<div className=" p-8 flex flex-col">
-						<SecondaryButton onClick={setAction} name={action} />
+						<SecondaryButton loading={isLoading} onClick={setAction} name={action} />
 						<SecondaryButton onClick={onClose} name="cancel" className="mt-4" />
 					</div>
 				</div>

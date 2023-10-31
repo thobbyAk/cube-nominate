@@ -83,9 +83,11 @@ const NominationPage = () => {
 		const selectedNominee = nominees?.find(
 			(nominee: Nominees) => nominee.nominee_id === nomineeId
 		);
-		setNomineeSeleted(
-			selectedNominee?.last_name + " " + selectedNominee?.first_name
-		);
+		if (selectedNominee?.last_name && selectedNominee?.first_name) {
+			setNomineeSeleted(
+				selectedNominee?.last_name + " " + selectedNominee?.first_name
+			);
+		}
 	};
 
 	useEffect(() => {
@@ -94,7 +96,9 @@ const NominationPage = () => {
 			setValue("nominee_id", currentNomination.nominee_id);
 			setValue("process", currentNomination.process);
 			setCubeName(currentNomination.nominee_id);
-			fetchNomineeNameById(currentNomination.nominee_id);
+			if (currentNomination.nominee_id !== "")
+				fetchNomineeNameById(currentNomination.nominee_id);
+
 			const currentRating = ratingArray.find(
 				(rating: RateTypes) => rating.value === currentNomination.process
 			);

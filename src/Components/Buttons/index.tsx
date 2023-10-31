@@ -69,7 +69,7 @@ export const SecondaryButton = ({
 			}}
 		>
 			{loading ? (
-				<div className="flex">
+				<div className="flex justify-center">
 					<BlackLoadingIcon />
 				</div>
 			) : (
