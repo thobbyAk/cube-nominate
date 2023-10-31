@@ -9,7 +9,7 @@
 
 Clone the repository into your system but running git clone https://github.com/thobbyAk/cube-nominate.git
 
-cd into the root folder using cd "folder name"
+cd into the root folder using **cd "folder name"**
 
 install all dependencies using **npm install**
 
