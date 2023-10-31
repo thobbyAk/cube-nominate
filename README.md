@@ -7,7 +7,7 @@
 2. Install git. Download it here [here](https://git-scm.com/downloads)
 3. [NPM](https://www.npmjs.com/) to package manager to run a remote script
 
-Clone the repository into your system but running git clone https://github.com/thobbyAk/cube-nominate.git
+Clone the repository into your system. **run git clone https://github.com/thobbyAk/cube-nominate.git**
 
 cd into the root folder using **cd "folder name"**
 
