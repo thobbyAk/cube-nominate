@@ -1,4 +1,4 @@
-# Getting Started/ How to Setup Project
+# Getting Started
 
 ## Prerequisites
 
