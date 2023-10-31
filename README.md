@@ -39,7 +39,7 @@
 ### Extra Features
 
 1. Register screen - allows a cube employee to sign up
-2. Login screen - allows a cube employee to log in before nomination. the authentication token returned on login is used to authenticate the API call which requires authentication
+2. Login screen - allows a cube employee to log in before nomination. the authentication token returned on login is used to authenticate the HTTP requests  which requires authentication
 3. Edit Nomination
 
 
