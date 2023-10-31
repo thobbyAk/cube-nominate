@@ -11,13 +11,13 @@
 
 ### How to Run 
 
-- Clone the repository; **git clone https://github.com/thobbyAk/cube-nominate.git**
+- Clone the repository; run `**git clone https://github.com/thobbyAk/cube-nominate.git**`
 
-- Change into the project directory; **cd cube-nominate**
+- Change into the project directory; run `**cd cube-nominate**`
 
-- Install all dependencies; **npm install**
+- Install all dependencies; run `**npm install**`
 
-- Start project; **npm start** Runs the app in the development mode.
+- Start project; run `**npm start**` to start app in the development mode.
 
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
