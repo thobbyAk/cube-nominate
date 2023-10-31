@@ -34,7 +34,6 @@ export function configureAxios({ accessToken }: AxiosConfigProps) {
                 sessionStorage.clear()
                 toast.error("Unauthorized request, please login and try again.")
             } else if (error.response) {
-                console.log('error reponse', error)
                 toast.error(error.response.data.data.error ?? "An error occurred while processing your request.")
             }
 

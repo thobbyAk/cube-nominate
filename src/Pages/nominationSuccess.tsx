@@ -13,6 +13,7 @@ const NominationSuccess = () => {
 		dispatch(handleSubmitNomination({}));
 		navigate("/nominate");
 	};
+
 	return (
 		<div className="min-h-screen flex justify-center items-center">
 			<div className="w-full md:w-[55rem] px-4">

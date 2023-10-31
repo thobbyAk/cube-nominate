@@ -7,6 +7,7 @@ interface Authentication {
 const initialState: Authentication = {
     token: ""
 }
+
 export const authenticationSlice = createSlice({
     name: 'authentication',
     initialState,

@@ -13,9 +13,11 @@ const MyNomination = () => {
 		queryKey: ["nominations"],
 		queryFn: () => getAllNominations(),
 	});
+
 	useEffect(() => {
 		dispatch(handleSetNominations(data?.data));
 	}, [data, dispatch]);
+
 	return (
 		<>
 			{data?.data?.length === 0 ? (

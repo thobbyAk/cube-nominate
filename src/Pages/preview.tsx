@@ -16,6 +16,7 @@ const Preview = () => {
 	);
 	const [nomineeSelected, setNomineeSeleted] = useState("");
 	const queryClient = useQueryClient();
+
 	const { error, mutate, isPending } = useMutation({
 		mutationFn: (payload: NominationPayload) => {
 			if (currentNomination.nomination_id) {
@@ -30,6 +31,7 @@ const Preview = () => {
 			navigate("/success");
 		},
 	});
+
 	if (error) console.log("error occured while creating nomination", error);
 
 	useEffect(() => {
@@ -48,6 +50,7 @@ const Preview = () => {
 	const submitToApi = () => {
 		mutate(currentNomination);
 	};
+
 	return (
 		<div className="min-h-screen flex justify-center py-9 items-center">
 			<div className="w-full md:w-[55rem] p-7 bg-white">

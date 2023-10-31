@@ -21,6 +21,7 @@ const schema = yup.object().shape({
 const AuthenticationScreen = () => {
 	const dispatch = useAppDispatch();
 	const navigate = useNavigate();
+
 	const { error, mutate, isPending } = useMutation({
 		mutationFn: (payload: LoginPayload) => login(payload),
 		onSuccess: (data) => {
@@ -33,6 +34,7 @@ const AuthenticationScreen = () => {
 			navigate("/get-started");
 		},
 	});
+
 	if (error) {
 		console.log("error", error);
 	}

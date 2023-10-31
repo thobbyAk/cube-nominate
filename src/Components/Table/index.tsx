@@ -24,8 +24,8 @@ const NominationTable = () => {
 		(state) => state.nominationState
 	);
 	const queryClient = useQueryClient();
-
 	const dispatch = useAppDispatch();
+
 	const handleDeleteNomination = () => {
 		mutate(nominationId);
 	};
@@ -34,6 +34,7 @@ const NominationTable = () => {
 		queryKey: ["nominees"],
 		queryFn: () => getAllNominees(),
 	});
+
 	const { error, isPending, mutate } = useMutation({
 		mutationFn: (nominationId: string) => fetchDeleteNomination(nominationId),
 		onSuccess: () => {

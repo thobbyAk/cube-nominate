@@ -35,10 +35,12 @@ const NominationPage = () => {
 	const { nominees, currentNomination } = useAppStateSelector(
 		(state) => state.nominationState
 	);
+
 	const { data, error } = useQuery({
 		queryKey: ["nominees"],
 		queryFn: () => getAllNominees(),
 	});
+
 	const {
 		handleSubmit,
 		formState: { errors },
@@ -119,6 +121,7 @@ const NominationPage = () => {
 
 		navigate("/preview");
 	};
+
 	return (
 		<>
 			<div className="min-h-screen flex justify-center py-9 items-center">

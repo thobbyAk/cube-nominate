@@ -19,6 +19,7 @@ const schema = yup.object().shape({
 
 const RegisterScreen = () => {
 	const navigate = useNavigate();
+
 	const { error, mutate, isPending } = useMutation({
 		mutationFn: (payload: RegisterPayload) => createUser(payload),
 		onSuccess: (data) => {
@@ -27,9 +28,11 @@ const RegisterScreen = () => {
 			navigate("/");
 		},
 	});
+
 	if (error) {
 		console.log("error", error);
 	}
+
 	const {
 		register,
 		formState: { errors },
@@ -42,6 +45,7 @@ const RegisterScreen = () => {
 	const onSubmit = async (data: RegisterPayload) => {
 		mutate(data);
 	};
+
 	return (
 		<div className="flex justify-center py-9 items-center">
 			<div className="w-full md:w-[55rem] p-7 bg-white">
