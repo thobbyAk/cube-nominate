@@ -1,39 +1,34 @@
 # Getting Started
+## Run Project on Local Machine
 
-## Prerequisites
+### Prerequisites
 
 1. [Node.js](https://nodejs.org/) version 10.16.0 installed on your computer.
 
 2. Install git. Download it here [here](https://git-scm.com/downloads)
 3. [NPM](https://www.npmjs.com/) to package manager to run a remote script
 
-Clone the repository. run **git clone https://github.com/thobbyAk/cube-nominate.git**
+### How to Run 
 
-cd into the root folder using **cd "folder name"**
+>> Clone the repository; **git clone https://github.com/thobbyAk/cube-nominate.git**
 
-install all dependencies using **npm install**
+>> Change into the project directory; **cd cube-nominate**
 
-## Available Scripts
+>> Install all dependencies; **npm install**
 
-In the project directory, run:
+>> Start project; **npm start** Runs the app in the development mode.
 
-### `npm install`
+>> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-install all dependencies
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `Challenges`
 
-#### `Prcocess Rating`
+#### `Process Rating`
 
 1. I had a challenge with fetching a user's current process (image and value of the progress bar) based on the current user nomination on edit. I created an array of all ratings available and the values attached to them. I created a helper function to search through the array for the existing rating value and return the rating object. use the rating object returned to populate the
 2. I had a challenge with the scroll position staying in the same position as the previous page when you route to a new page. I created a helper component that adjusts the scroll position to the top whenever the route/pathname changes.
 
-### `Technologies Used technologies`
+### `Technologies Used `
 
 1. Redux- I used it for state management in the application because it provides me with a global state. it also provides middleware support, that allows me to add custom logic, such as API requests, or routing, to the dispatch process
 2. Reduxjs/toolkit - I used reduxtjs/toolkit because it simplifies the process of defining reducers and actions. I can write cleaner, more concise code for updating the application's state
