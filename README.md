@@ -10,20 +10,20 @@
 
 ### How to Run 
 
-~ Clone the repository; **git clone https://github.com/thobbyAk/cube-nominate.git**
+- Clone the repository; **git clone https://github.com/thobbyAk/cube-nominate.git**
 
-~ Change into the project directory; **cd cube-nominate**
+- Change into the project directory; **cd cube-nominate**
 
 - Install all dependencies; **npm install**
 
-> Start project; **npm start** Runs the app in the development mode.
+- Start project; **npm start** Runs the app in the development mode.
 
-> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-~Challenges~
+### Challenges
 
-#### Process Rating
+`Process Rating`
 
 1. I had a challenge with fetching a user's current process (image and value of the progress bar) based on the current user nomination on edit. I created an array of all ratings available and the values attached to them. I created a helper function to search through the array for the existing rating value and return the rating object. use the rating object returned to populate the
 2. I had a challenge with the scroll position staying in the same position as the previous page when you route to a new page. I created a helper component that adjusts the scroll position to the top whenever the route/pathname changes.
