@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-1. [https://nodejs.org/](Node.js) version 10.16.0 installed on your computer.
+1. (Node.js)[https://nodejs.org/] version 10.16.0 installed on your computer.
 
 2. Make sure you have git installed if you dont Download it here [https://git-scm.com/downloads](here)
 3. [https://www.npmjs.com/](NPM) to package manager to run a remote script
