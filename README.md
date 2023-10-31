@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Getting Started/ How to Setup Procject
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequisites
+
+1. [https://nodejs.org/](Node.js) version 10.16.0 installed on your computer.
+
+2. Make sure you have git installed if you dont Download it here [https://git-scm.com/downloads](here)
+3. [https://www.npmjs.com/](NPM) to package manager to run a remote script
+
+Clone the repository into your system but running git clone https://github.com/thobbyAk/cube-nominate.git
+
+cd in to the root folder usund cd "folder name"
+
+install all dependencies using **npm install**
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+install all dependencies
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Challenges`
 
-### `npm test`
+#### `Prcocess Rating`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. I had a challenge with fetching a users current process (image and value of the progress bar) based on current user nomination on edit. i created an array of all ratings available and the values attached to them. i created an helper function to search through the array for the existing rating value and return the rating object. use the rating object returned to populate the
+2. I had a chellange with the scroll position staying on the same position as the previous page when you route to a new page. i created an helper component that adjust the scroll posiition to the top whenever the route/pathname changes .
 
-### `npm run build`
+### `Technologies Used technologies`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Redux- I used it for state management in the application because it provides me with a global state. it also provides middleware support, that allows me to add custom logic, such as API requests, or routing, to the dispatch process
+2. Reduxjs/toolkit - I used reduxtjs/toolkit because it simplifies the process of defining reducers and actions. I am able write cleaner, more concise code for updating the application's state
+3. Axios for making HTTP requests calls. I used axios because it provides interceptor support for when making http requests that require authorizations. it also simplifies handling asynchronous operations and allows me to use async/await syntax, resulting in cleaner and more readable code. it also allows me to handle error responses/requests from the http calls.
+4. React-hot-toast - this provides userfeedback as a prompt on the top right corner when an api call is made
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Extra Features`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Register screen - allows a cube employee to sign up
+Login screen - allows a cube employee to login before nomination. the authentication token returned on login is used to authenticate the api call which require authentication
 
-### `npm run eject`
+Reduxjs/toolkit
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `Future Impovement `
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Pagination - A pagination component is needed to prevent overflow on the each users nominations page. this improves the user experience
+2. search functionality - A search functionality to help search through old nominations. the search will be by moninee name.
