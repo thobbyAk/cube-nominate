@@ -5,7 +5,7 @@
 
 1. [Node.js](https://nodejs.org/) version 10.16.0 installed on your computer.
 
-2. Install git. Download it here [git](https://git-scm.com/downloads) if uninstalled.
+2. Git Version control. Download [here](https://git-scm.com/downloads) if uninstalled.
    
 3. [NPM](https://www.npmjs.com/) to package manager to run a remote script
 
